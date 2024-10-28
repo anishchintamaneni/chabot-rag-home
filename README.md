@@ -1,7 +1,6 @@
 # [ChatGPT-RAG AI Template]
 
-# Integration Guide: Redirect Login Page to Next.js Layout
-
+# Integration Guide:
 ## Step 1: Host Both Projects  
 
 - **Option 1:** Deploy both projects on the **same server** but under different paths (e.g., `/login` and `/app`).
