@@ -33,7 +33,7 @@ Modify the **login button** in `index.html` to redirect to the appropriate **Nex
 
 
 
-## Step 3: Handle Redirection in Next.js Layout (Optional)  
+## Step 3: Handle Redirection in layout.tsx
 
 <!-- ### `chatgpt-ai-template-main/app/api/layout.tsx` Example:
 ```tsx
