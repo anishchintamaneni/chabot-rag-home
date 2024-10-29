@@ -48,9 +48,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const router = useRouter();
 
   useEffect(() => {
-    const apiKey = localStorage.getItem('apiKey');
-    if (!apiKey) {
-      // Redirect to login if no API key is found
+    const username = localStorage.getItem('username');
+    const password = localStorage.getItem('password');
+
+    // Redirect to login if username or password is not found
+    if (!username || !password) {
       router.push('https://docquestui.cogniai.com/login'); // Redirect to the login page
     }
   }, []);
