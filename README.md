@@ -9,7 +9,7 @@
 
 ### Example:  
 - **Login app URL:** `https://docquestui.cogniai.com/login`  
-- **Next.js app URL:** `https://docquestui.cogniai.com/userhome`  
+- **chatgpt app URL:** `https://docquestui.cogniai.com/userhome`  
 
 ---
 
@@ -27,7 +27,7 @@ Modify the **login button** in `index.html` to redirect to the appropriate **Nex
 <script>
     document.getElementById('loginButton').addEventListener('click', () => {
         // Redirect to the Next.js dashboard or layout page
-        window.location.href = "https://app.example.com/dashboard"; // Change to your Next.js app URL
+        window.location.href = "https://docquestui.cogniai.com/userhome"; // Change to your Next.js app URL
     });
 </script> -->
 
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     const apiKey = localStorage.getItem('apiKey');
     if (!apiKey) {
       // Redirect to login if no API key is found
-      router.push('https://login.example.com'); // Redirect to the login page
+      router.push('https://docquestui.cogniai.com/login'); // Redirect to the login page
     }
   }, []);
 
