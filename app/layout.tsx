@@ -1,4 +1,4 @@
--'use client';
+'use client';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { ChakraProvider, Box, Portal, useDisclosure } from '@chakra-ui/react';
 import theme from '@/theme/theme';
